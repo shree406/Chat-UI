@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat UI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen flex items-center justify-center bg-black">
+
+  <!-- Chat Container -->
+  <div class="w-full max-w-xl h-[650px] bg-zinc-900 rounded-3xl 
+  shadow-2xl flex flex-col overflow-hidden">
+
+    <!-- Header -->
+    <div class="flex items-center gap-4 p-4 bg-black">
+      <img src="profile.webp"
+           class="w-12 h-12 rounded-full">
+      <div>
+        <h2 class="text-white font-semibold text-lg">Deepa</h2>
+        <p class="text-sky-400 text-sm">Online</p>
+      </div>
+    </div>
+
+    <!-- Messages -->
+    <div class="flex-1 p-5 space-y-6 overflow-y-auto bg-zinc-800">
+
+      <!-- Incoming -->
+      <div class="max-w-[80%] bg-zinc-200 text-zinc-900 p-4 rounded-2xl rounded-tl-none">
+        <p>Hey! Did you finish the assignment?</p>
+        <span class="text-xs text-zinc-500 float-right mt-1">10:10 AM</span>
+      </div>
+
+      <!-- Outgoing -->
+      <div class="ml-auto max-w-[80%] bg-gradient-to-r from-sky-400 to-blue-500 
+      text-white p-4 rounded-2xl rounded-tr-none">
+        <p>Almost done 😅 Still revising some parts.</p>
+        <span class="text-xs text-white/80 float-right mt-1">10:11 AM ✓✓</span>
+      </div>
+
+      <!-- Incoming -->
+      <div class="max-w-[80%] bg-zinc-200 text-zinc-900 p-4 rounded-2xl rounded-tl-none">
+        <p>No problem. Just make sure you upload before evening.</p>
+        <span class="text-xs text-zinc-500 float-right mt-1">10:12 AM</span>
+      </div>
+
+      <!-- Outgoing -->
+      <div class="ml-auto max-w-[80%] bg-gradient-to-r from-sky-400 to-blue-500 
+      text-white p-4 rounded-2xl rounded-tr-none">
+        <p>
+          Yeah sure. By the way, the UI design you shared yesterday was really clean.
+          The gradient and spacing were perfect 👌
+        </p>
+        <span class="text-xs text-white/80 float-right mt-1">10:14 AM ✓✓</span>
+      </div>
+
+      <!-- Incoming -->
+      <div class="max-w-[80%] bg-zinc-200 text-zinc-900 p-4 rounded-2xl rounded-tl-none">
+        <p>
+          Thank you! 😊 I spent a lot of time improving the spacing,
+          typography and overall user experience.
+        </p>
+        <span class="text-xs text-zinc-500 float-right mt-1">10:15 AM</span>
+      </div>
+
+    </div>
+
+    <!-- Input (Static UI) -->
+    <div class="p-4 bg-black flex items-center gap-3">
+      <input type="text" placeholder="Type a message..."
+        class="flex-1 px-4 py-2 rounded-full bg-zinc-900 text-white 
+        placeholder-white/40 focus:outline-none">
+      <button class="px-6 py-2 rounded-full text-white font-semibold
+        bg-gradient-to-r from-sky-400 to-blue-500">
+        Send
+      </button>
+    </div>
+
+  </div>
+
+</body>
+</html>
